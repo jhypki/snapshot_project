@@ -60,6 +60,8 @@ ul{
   display :flex;  
   gap: 5px;
   padding: 0;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 ul li button{
@@ -72,6 +74,24 @@ ul li button{
 ul li button:hover{
   background: darkred;
   
+}
+
+@media (max-width: 768px){
+  input{
+    width: 15rem;
+  }
+  ul li button{
+    width: 80px;
+  }
+}
+
+@media (max-width: 500px){
+  input{
+    width: 10rem;
+  }
+  ul li button{
+    width: 120px;
+  }
 }
 
 img{
@@ -101,5 +121,21 @@ img:hover{
   padding: 0;
   max-width: 60%;
   justify-content: center;
-  margin-top: 50px;
+  padding-bottom: 40px;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+
+.loading{
+  animation: spin 2s linear infinite;
+  width: 80px;
+  height: 80px;
+  border: 5px solid #d2d2d2;
+  border-top: 5px solid red;
+  border-radius: 50%;
+  margin: 20px auto;
 }

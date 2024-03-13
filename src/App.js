@@ -11,18 +11,17 @@ import Search from './Components/Search.jsx';
 
 
 function App() {
-  const [category, setCategory] = useState('All');
-  const { runSearch } = useContext(ImageContext);
+  const { runSearch, category } = useContext(ImageContext);
 
   const handleSearch = (e, searchEntry) => {
     e.preventDefault();
-    setCategory(searchEntry);
+    runSearch(searchEntry);
     console.log(searchEntry)
   }
   return (
   
     <div className='wrapper'>
-    <Header/>
+    <Header/>   
     <SearchBar handleSearch={handleSearch}/>
     <CategoryBar/>
     <Search searchTerm={category}/>

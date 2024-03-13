@@ -5,8 +5,8 @@ function CategoryBar() {
   return (
     <ul className="category-bar">
       <CategoryButton category="All" />
-      <CategoryButton category="Food" />
-      <CategoryButton category="Drinks" />
+      <CategoryButton category="Mountains" />
+      <CategoryButton category="Forests" />
       <CategoryButton category="Desserts" />
     </ul>
   );

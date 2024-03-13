@@ -15,7 +15,7 @@ function ImageContextProvider({ children }) {
     useEffect(()=> {
         const fetchImages = async () => {
             try{
-                const response = await fetch(`https://api.unsplash.com/photos/random?client_id=${key}&count=8&query=${category}
+                const response = await fetch(`https://api.unsplash.com/photos/random?client_id=${key}&count=20&query=${category}
                 `);
                 const data = await response.json();
                 setLoading(false);
