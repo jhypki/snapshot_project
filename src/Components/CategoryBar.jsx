@@ -7,7 +7,7 @@ function CategoryBar() {
       <CategoryButton category="All" />
       <CategoryButton category="Mountains" />
       <CategoryButton category="Forests" />
-      <CategoryButton category="Desserts" />
+      <CategoryButton category="Deserts" />
     </ul>
   );
 }

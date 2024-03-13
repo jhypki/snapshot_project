@@ -1,7 +1,9 @@
 function Header() {
   return (
     <div>
-      <h1>SnapShot</h1>
+      <h1>
+        Snap<span>Shot</span>
+      </h1>
     </div>
   );
 }
